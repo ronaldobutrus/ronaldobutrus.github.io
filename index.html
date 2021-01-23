@@ -1,31 +1,304 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>R.B. Web</title>
+<title>Ronaldo Butrus</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html {background-color: yellow; }
-h {color:red; font-weight:bold; font-family:Tahoma, Geneva, sans-serif; font-size:48px;}
-p.link {color:blue; font-family:Tahoma, Geneva, sans-serif; font-size:24px;}
-p.info {color:black; font-family:Tahoma, Geneva, sans-serif; font-size:16px;}
-a:hover {color:black; background-color:white;}
-footer {color:black; font-family:Tahoma, Geneva, sans-serif; font-size:12px;}
+    html, body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Roboto", sans-serif
+    }
 </style>
-  </head>
-  <body>
-    <h>MAIN MENU</h>
-<hr>
-    <p class="link"><a href="Site1/index.html">Site 1 - Colour Generator (Basic)</a></p>
-    <p class="link"><a href="Site2/index.html">Site 2 - Bingo (Basic)</a></p>
-    <p class="link"><a href="Site3/index.html">Site 3 - PyGame Installation Instructions</a></p>
-    <p class="link"><a href="Site4/index.html">Site 4 - Bingo (Qt)</a></p>
-<br>
-<hr>
-<br>
-<h>ABOUT ME</h>
-<p class="info">FA Qualified Referee at HYFL/MFA<br>A-Level Student<br>Keen Computer Scientist
-  </body>
-<footer>
-<hr>
-  <p>&#169; Ronaldo Butrus 2020 &nbsp;&nbsp;&nbsp;<a href="mailto:ronaldobutrus@gmail.com">Email</a></p>
-</footer>
+<body class="w3-light-grey">
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+        <!-- The Grid -->
+        <div class="w3-row-padding">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="rbutrus.png" style="width:100%" alt="Avatar">
+                        <div class="w3-display-bottomleft w3-container w3-text-black"
+                             style="background-color:white">
+                            <h2>Ronaldo Butrus</h2>
+                        </div>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Student</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>London, UK</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>ronaldobutrus@gmail.com</p>
+                        <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>-->
+                        <hr>
+
+                        <p class="w3-large w3-text-theme"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                        <p>Backend Development</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                        </div>
+                        <p>Frontend Development</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:60%"></div>
+                        </div>
+                        <p>Refereeing</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:60%"></div>
+                        </div>
+                        <!--<p>Media</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+                        </div>-->
+                        <br>
+
+                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-yellow"></i>Languages</b></p>
+                        <p>English</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-yellow" style="height:24px;width:100%"></div>
+                        </div>
+                        <p>French</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-yellow" style="height:24px;width:60%"></div>
+                        </div>
+                        <p>Arabic</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-yellow" style="height:24px;width:60%"></div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Work Experience</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Football Referee</b></h5>
+                        <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2019 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+                        <p>
+                            In Summer 2019 I undertook the FA's introductory referee course,
+                            which featured a combined <b>forty hours</b> of training and observation to become an FA-Qualified Referee.
+                            <br /><br />A few months later, I became eligible for a promotion to a Level 7 Referee, thus allowing me to officiate in both adult and youth amateur football leagues.
+                            This qualification is internationally recognised by FIFA and respective National FAs.
+                            <br />Currently, I am officiating with Harrow Youth Football League (HYFL) and Middlesex FA.
+                            <br /><br />Refereeing has led me to develop the following skills:
+                            <br /><b>- Collaboration:</b> refereeing requires constant collaboration both on and off the field of play. From communicating with secretaries to secure
+                            match details to dealing with on-field confrontations, collaboration is key to officiation.
+                            <br /><b>- Decision-making:</b> as a referee, I am required to make difficult decisions around the clock.
+                            This ranges from deciding whether a pitch is playable to whether or not a player is guilty of a sending-off offence.
+                            Furthermore, decisions made as a referee will almost always incite disagreement from either parties; hence I am obliged to present suitable degree
+                            of self-confidence throughout my role.
+                            <br /><b>- Communication:</b> it's all about communication. Throughout any match, I have a duty to both give and receive signals to
+                            assistant referees and the fourth official and simultaneously making these signals as discrete as possible to avoid reactions from players, substitutes and
+                            team officials.
+                        </p>
+                        <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Domestic Electrical Installer</b></h5>
+                        <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2020 - Aug 2020<!--<span class="w3-tag w3-teal w3-round">Current</span>--></h6>
+                        <p>
+                            Partnered with a building contractor, I joined an electrician in undertaking multiple electrical projects. The work included:
+                            <br />- installing cabling to connect each part of the properties to the main board
+                            <br />- designing electrical plans for each room
+                            <br />- taking measurements and calculating positions in 3D
+                            <br />- stripping and cleaning the ends of the wires at their sources and destinations <i>and</i>
+                            <br />- connecting devices such as switches, sockets, light fittings and fans.
+                        </p>
+                        <hr>
+                    </div>
+
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Achievements / Portfolio</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>General Programming</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2014 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+                        <p>
+                            Since late 2014, I have developed a strong passion for programming. Starting with Scratch and gradually working my way upwards,
+                            I now have significant experience from over the years with:
+                            <br /><b>- Python:</b> the start of my programming journey. From <code>print("Hello World")</code> to polymorphism and inheritance, python is an all-rounder.
+                            In addition, I completed my GCSE Computer Science project using Python and the Tkinter module for my GUI.
+                            <br /><b>- C++:</b> a slightly lower-level programming language compared to python; I used C++ to make applications with Qt 5.
+                            <br /><b>- C#:</b> more recently, I have taken up C# to create cross-platform applications with Xamarin.Forms, native applications using Xamarin and some exploration with Unity.
+                            <br /><b>- HTML:</b> my first markup language; this webpage was created with HTML.
+                            <br /><b>- JavaScript:</b> initially, I used JavaScript to add interactivity to my HTML pages. In 2016, I experimented
+                            with Node.js to implement functionality in online games.
+                            <br /><b>- CSS:</b> as with the point above, I used CSS to add colour and presentability to some HTML pages.
+                            <br /><b>- QML:</b> I used QML alongside C++ when creating applications with Qt.
+                            <br /><b>- XAML:</b> my favourite markup language, which I used to create views for my Xamarin.Forms application.
+                            <br /><b>- XML:</b> yet another markup language I have used to create views for Xamarin.Android applications.
+                        </p>
+                        <hr />
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Web Development</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+                        <p>
+                            Having designed and maintained <a href="www.dmrm.co.uk">www.dmrm.co.uk</a> with the use of Wix, I am currently exploring web development with ASP.NET.
+                        </p>
+                        <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Maths Challenge</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2020 - Aug 2020<!--<span class="w3-tag w3-teal w3-round">Current</span>--></h6>
+                        <p>
+                            I take pride in having taken part and succeeded in the junior, senior and intermediate maths challenges every year since 2015.
+                        </p>
+                        <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Football Gold Medalist</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2018</h6>
+                        <p>I am honoured to join Brentham Colts F.C. in celebrating a final victory as a player before training to become a referee.</p>
+                        <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Jack Petchey Award</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2017</h6>
+                        <p>
+                            When I was in Year 8, I was nominated by my secondary school for the <a href="jack petchey foundation">Jack Petchey</a> Award.<br />
+                            I took the privilege of meeting Chief Superintendent Raj Singh Kholi to receive my medal.
+                        </p>
+                        <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Certificates of Achievement (Colours)</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2018</h6>
+                        <p>
+                            At Gunnersbury, I received the following certificates of achievement, each corresponding to a coloured badge on one's blazer:<br /><br />
+                            <i>
+                                <u>Foundation Colours</u><br />
+                                - Mathematics<br />
+                                - Science<br />
+                                - French<br />
+                                - History<br />
+                                - Religious Studies<br />
+                                - Design & Technology<br />
+                                - The Arts<br />
+                                - Citizenship<br />
+                                - Literacy<br /><br />
+                                <u>Junior Colours</u><br />
+                                - Mathematics<br />
+                                - Science<br />
+                                - Computer Science<br />
+                                - Computer Science (new)<br />
+                                - Design & Technology<br />
+                            </i>
+                        </p>
+                        <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Football Gold Medalist</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2018</h6>
+                        <p>I am honoured to join Brentham Colts F.C. in celebrating a final victory as a player before training to become a referee.</p>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-brown"></i>Education</h2>
+
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Kings College London Mathematics School</b></h5>
+                        <h6 class="w3-text-brown"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2020 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+                        <p>
+                            <b>Advanced Level General Certificates of Education: </b><br />
+                            - Mathematics <br />
+                            - Further Mathematics <br />
+                            - Physics <br /><br />
+                            <b>Advanced Subsidary Level General Certificates of Education:</b> <br />
+                            - Computer Science <br />
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Gunnersbury Catholic School For Boys</b></h5>
+                        <h6 class="w3-text-brown"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2015 - June 2020</h6>
+                        <p>
+                            <b>General Certificates of Secondary Education: </b><br />
+                            - Mathematics: 9 <br />
+                            - English Language: 9 <br />
+                            - English Literature: 8 <br />
+                            - Biology: 9 <br />
+                            - Chemistry: 9 <br />
+                            - Physics: 9 <br />
+                            - Computer Science: 9 <br />
+                            - Geography: 9 <br />
+                            - French: 9 <br />
+                            - Religious Studies: 9 <br /><br />
+                            <b>AQA Level 2 Certificates:</b> <br />
+                            - Further Mathematics: 9 <br />
+                        </p>
+                    </div>
+                    <hr />
+                </div>
+
+                <!--<div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Personal Interests and Experiences</h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Domestic Electrician</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2020 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                        <p>
+                            Partnered with a building contractor, I joined an electrician in undertaking multiple electrical projects. The work included:
+                            <br />- installing cabling to connect each part of the properties to the main board
+                            <br />- designing electrical plans for each room
+                            <br />- taking measurements and calculating positions in 3D
+                            <br />- stripping and cleaning the ends of the wires at their sources and destinations <i>and</i>
+                            <br />- connecting devices such as switches, sockets, light fittings and fans.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Referee</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2019 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+                        <p>
+
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+                    </div>
+                </div>-->
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+        <!--<i class="fa fa-facebook-official w3-hover-opacity"></i>-->
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"> ronaldobutrus</i>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+</body>
 </html>
+
