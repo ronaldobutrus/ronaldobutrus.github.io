@@ -6,8 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript">
-    function setVideoHeight(element) {
+<script type="text/javascript">function setVideoHeight(element) {
         var container = document.getElementById("videoContainer");
         if (/Mobi/.test(navigator.userAgent)) {
             element.style.height = container.offsetWidth * 0.9 * 11 / 16 + 'px';
@@ -16,9 +15,7 @@
         else {
             element.style.height = container.offsetWidth * 0.4 * 11 / 16 + 'px';
         }
-        
-    }
-</script>
+    }</script>
 <style>
     html, body, h1, h2, h3, h4, h5, h6 {
         font-family: "Roboto", sans-serif
@@ -32,12 +29,12 @@
         <!-- The Grid -->
         <div class="w3-row-padding">
             <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16">
-                    <!--<i class="fa fa-fw w3-margin-right w3-xxlarge w3-text-indigo">-->
-                    <img src="appIcon.png" class="fa fa-fw w3-margin-left w3-margin-right w3-xxlarge" /></i>Electrical Listbuilder
-                </h2>
+                <div class="w3-padding-16 w3-margin-top" style="display:flex;flex-direction:row">
+                    <img src="appIcon.png" style="width:70px;height:70px;border-radius:20%;vertical-align:middle" class="fa fa-fw w3-margin-left w3-margin-right  w3-xxlarge" />
+                    <h2 class="w3-text-grey" style="vertical-align: middle">Electrical Listbuilder</h2>
+                </div>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Leave a Review</b></h5>
+                    <h5 class="w3-opacity"><hr><b>Leave a Review</b></h5>
                     <p>
                         Please click the appropriate link to leave us a review.  <a href="https://apps.apple.com/gb/app/electrical-listbuilder/id1551698180">App Store</a>  <a href="">Google Play Store</a>
                     </p>
@@ -114,8 +111,10 @@
                             </p> <p>
                                 Link to privacy policy of third party service providers used
                                 by the app
-                            </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
-                                     <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiJy4a77s3uAhXColwKHdMNADMQFjABegQIAhAC&url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Fgdpr%2F&usg=AOvVaw0Lry1QpdU2h1DDErASs2n4" target="_blank" rel="noopener noreferrer">Microsoft App Center</a></li></ul>
+                            </p> <ul>
+                                <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+                                <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiJy4a77s3uAhXColwKHdMNADMQFjABegQIAhAC&url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Fgdpr%2F&usg=AOvVaw0Lry1QpdU2h1DDErASs2n4" target="_blank" rel="noopener noreferrer">Microsoft App Center</a></li>
+                            </ul>
                         </div> <p><strong>Log Data</strong></p> <p>
                             I want to inform you that whenever you
                             use my Service, in a case of an error in the app
