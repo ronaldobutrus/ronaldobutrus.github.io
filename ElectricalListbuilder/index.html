@@ -9,7 +9,14 @@
 <script type="text/javascript">
     function setVideoHeight(element) {
         var container = document.getElementById("videoContainer");
-        element.style.height = container.offsetWidth * 0.4 * 11 / 16 +'px';
+        if (/Mobi/.test(navigator.userAgent)) {
+            element.style.height = container.offsetWidth * 0.9 * 11 / 16 + 'px';
+            element.style.width = container.offsetWidth * 0.9 + 'px';
+        }
+        else {
+            element.style.height = container.offsetWidth * 0.4 * 11 / 16 + 'px';
+        }
+        
     }
 </script>
 <style>
