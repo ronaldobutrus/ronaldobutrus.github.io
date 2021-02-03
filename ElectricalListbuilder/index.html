@@ -6,6 +6,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+    function setVideoHeight(element) {
+        var container = document.getElementById("videoContainer");
+        element.style.height = container.offsetWidth * 0.4 * 11 / 16 +'px';
+    }
+</script>
 <style>
     html, body, h1, h2, h3, h4, h5, h6 {
         font-family: "Roboto", sans-serif
@@ -31,14 +37,17 @@
                     <hr>
                 </div>
 
-                <div class="w3-container">
+                <div class="w3-container" id="videoContainer">
                     <h5 class="w3-opacity"><b>Support Videos</b></h5>
-                    <h8 class="w3-opacity"><b>Arabic</b></h8>
+                    <p align="center"><h8 class="w3-opacity">Arabic</h8></p>
                     <p align="center">
-                        <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpGnYJ2VO4R2KFB3CViC6WsDNwpNgUxENmkrZ8CP3KzuuvdQ/viewform?embedded=true"
-        width="640" height="793" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uKL0nLwFV88"
-                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe style="width:40%;"
+                                src="https://www.youtube.com/embed/uKL0nLwFV88"
+                                id="videoArabic"
+                                onload="setVideoHeight(this)"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                     </p>
                     <hr>
                 </div>
@@ -46,8 +55,6 @@
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>Request Support</b></h5>
                     <p>
-                        <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpGnYJ2VO4R2KFB3CViC6WsDNwpNgUxENmkrZ8CP3KzuuvdQ/viewform?embedded=true"
-                        width="640" height="793" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpGnYJ2VO4R2KFB3CViC6WsDNwpNgUxENmkrZ8CP3KzuuvdQ/viewform?embedded=true"
                                 frameborder="0" marginheight="0" marginwidth="0" style="position:relative; width:100%" height="550">
                             Loading Google Form…
@@ -59,8 +66,6 @@
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>Report a bug</b></h5>
                     <p>
-                        <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5Lvv4C33e6g1P25LNEQRJa2OJ-O8EMy7JEb_AJ-v-_P1Kgw/viewform?embedded=true"
-                        width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5Lvv4C33e6g1P25LNEQRJa2OJ-O8EMy7JEb_AJ-v-_P1Kgw/viewform?embedded=true"
                                 frameborder="0" marginheight="0" marginwidth="0" style="position:relative; width:100%" height="550">
                             Loading Google Form…
@@ -102,7 +107,8 @@
                             </p> <p>
                                 Link to privacy policy of third party service providers used
                                 by the app
-                            </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul>
+                            </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+                                     <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiJy4a77s3uAhXColwKHdMNADMQFjABegQIAhAC&url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fappcenter%2Fgdpr%2F&usg=AOvVaw0Lry1QpdU2h1DDErASs2n4" target="_blank" rel="noopener noreferrer">Microsoft App Center</a></li></ul>
                         </div> <p><strong>Log Data</strong></p> <p>
                             I want to inform you that whenever you
                             use my Service, in a case of an error in the app
