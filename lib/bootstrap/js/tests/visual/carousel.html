@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronaldo Butrus</title>
+
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+  <style>
+    #myBtn {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Fixed/sticky position */
+      bottom: 40px;
+      /* Place the button at the bottom of the page */
+      right: 40px;
+      /* Place the button 30px from the right */
+      z-index: 99;
+      /* Make sure it does not overlap */
+      border: none;
+      /* Remove borders */
+      outline: none;
+      /* Remove outline */
+      color: white;
+      /* Text color */
+      cursor: pointer;
+      /* Add a mouse pointer on hover */
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+      /* Add a dark-grey background on hover */
+    }
+  </style>
+
+</head>
+
+<body class="d-flex flex-column h-100 bg-lightgreen">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Ronaldo Butrus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Me
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="education.html">Education</a></li>
+                      <li><a class="dropdown-item" href="softwaredevelopment.html">Software development</a></li>
+                      <li><a class="dropdown-item" href="refereeing.html">Refereeing</a></li>
+                    </ul>
+                  </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="achievements.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="softwaredevelopment.html">Software Dev.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workexperiences.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="refereeing.html">Refereeing</a>
+            </li>
+            <!--<li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>-->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="flex-shrink-0">
+    <div class="container py-5">
+      <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Carousel</title>
+    <style>
+      .carousel-item {
+        transition: transform 2s ease, opacity .5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Carousel <small>Bootstrap Visual Test</small></h1>
+
+      <p>The transition duration should be around 2s. Also, the carousel shouldn't slide when its window/tab is hidden. Check the console log.</p>
+
+      <div id="carousel-example-generic" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-example-generic" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-example-generic" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel-example-generic" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.imgur.com/iEZgY7Y.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.imgur.com/eNWn1Xs.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.imgur.com/Nm7xoti.jpg" alt="Third slide">
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#carousel-example-generic" type="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carousel-example-generic" type="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="../../dist/dom/event-handler.js"></script>
+    <script src="../../dist/dom/selector-engine.js"></script>
+    <script src="../../dist/dom/manipulator.js"></script>
+    <script src="../../dist/dom/data.js"></script>
+    <script src="../../dist/base-component.js"></script>
+    <script src="../../dist/carousel.js"></script>
+    <script>
+      var t0
+      var t1
+      var carousel = document.getElementById('carousel-example-generic')
+
+      // Test to show that the carousel doesn't slide when the current tab isn't visible
+      // Test to show that transition-duration can be changed with css
+      carousel.addEventListener('slid.bs.carousel', function (event) {
+        t1 = performance.now()
+        console.log('transition-duration took ' + (t1 - t0) + 'ms, slid at ', event.timeStamp)
+      })
+      carousel.addEventListener('slide.bs.carousel', function () {
+        t0 = performance.now()
+      })
+    </script>
+  </body>
+</html>
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-darkgreen rounded-circle fs-3">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  </main>
+
+
+  <footer class="footer mt-auto py-3 bg-success">
+    <div class="d-flex justify-content-center">
+      <div class="container row">
+        <div class="col-10 col-lg-4">
+          <span class="text-light">&copy; Ronaldo Butrus 2021</span>
+        </div>
+        <div class="col-10 col-lg-4 mt-3 mt-lg-0">
+          <a href="/dist/index.html" class="link-light">Home - ronaldobutrus</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 1 (Colour generator)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 2 (Bingo)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 3 (Pygame install)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 4 (Bingo - Qt)</a><br>
+          <a href="/dist/ElectricalListbuilder/index.html" class="link-light">Electrical Listbuilder</a>
+        </div>
+        <div class="col-10 col-lg-4 mt-3 mt-lg-0">
+          <p class="text-light">Find me on social media</p>
+          <p class="text-light mt-2">
+            <i class="fa fa-linkedin"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-twitter"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-snapchat-ghost"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-instagram"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--<script src="~/js/site.js" asp-append-version="true"></script>-->
+  <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+  <!--<script src="https://kit.fontawesome.com/25753bb001.js" crossorigin="anonymous"></script>-->
+
+  <script type="text/javascript">
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+
+</html>

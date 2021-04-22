@@ -1,0 +1,18 @@
+$position-values: ( 0: 0, 50: 50%, 75: 75%, 100: 100% );
+
+// Required
+@import "../lib/bootstrap/scss/functions";
+@import "../lib/bootstrap/scss/variables";
+@import "../lib/bootstrap/scss/mixins";
+
+$lightgreen: #E7F3E8;
+$darkgreen: #2A6048;
+// Create your own map
+$custom-colors: ( "lightgreen": $lightgreen, "darkgreen": $darkgreen );
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$dropdown-link-active-bg: $green; 
+
+@import "../lib/bootstrap/scss/bootstrap.scss";

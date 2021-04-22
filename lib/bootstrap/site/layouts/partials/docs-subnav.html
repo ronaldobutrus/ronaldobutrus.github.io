@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronaldo Butrus</title>
+
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+  <style>
+    #myBtn {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Fixed/sticky position */
+      bottom: 40px;
+      /* Place the button at the bottom of the page */
+      right: 40px;
+      /* Place the button 30px from the right */
+      z-index: 99;
+      /* Make sure it does not overlap */
+      border: none;
+      /* Remove borders */
+      outline: none;
+      /* Remove outline */
+      color: white;
+      /* Text color */
+      cursor: pointer;
+      /* Add a mouse pointer on hover */
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+      /* Add a dark-grey background on hover */
+    }
+  </style>
+
+</head>
+
+<body class="d-flex flex-column h-100 bg-lightgreen">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Ronaldo Butrus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Me
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="education.html">Education</a></li>
+                      <li><a class="dropdown-item" href="softwaredevelopment.html">Software development</a></li>
+                      <li><a class="dropdown-item" href="refereeing.html">Refereeing</a></li>
+                    </ul>
+                  </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="achievements.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="softwaredevelopment.html">Software Dev.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workexperiences.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="refereeing.html">Refereeing</a>
+            </li>
+            <!--<li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>-->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="flex-shrink-0">
+    <div class="container py-5">
+      <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+  <div class="container-xxl d-flex align-items-md-center">
+    <form class="bd-search position-relative me-auto">
+      <input type="search" class="form-control" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="{{ .Site.Params.docs_version }}">
+    </form>
+
+    {{ partial "docs-versions" . }}
+
+    <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      {{ partial "icons/expand.svg" (dict "class" "bi bi-expand" "width" "24" "height" "24") }}
+      {{ partial "icons/collapse.svg" (dict "class" "bi bi-collapse" "width" "24" "height" "24") }}
+    </button>
+  </div>
+</nav>
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-darkgreen rounded-circle fs-3">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  </main>
+
+
+  <footer class="footer mt-auto py-3 bg-success">
+    <div class="d-flex justify-content-center">
+      <div class="container row">
+        <div class="col-10 col-lg-4">
+          <span class="text-light">&copy; Ronaldo Butrus 2021</span>
+        </div>
+        <div class="col-10 col-lg-4 mt-3 mt-lg-0">
+          <a href="/dist/index.html" class="link-light">Home - ronaldobutrus</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 1 (Colour generator)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 2 (Bingo)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 3 (Pygame install)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 4 (Bingo - Qt)</a><br>
+          <a href="/dist/ElectricalListbuilder/index.html" class="link-light">Electrical Listbuilder</a>
+        </div>
+        <div class="col-10 col-lg-4 mt-3 mt-lg-0">
+          <p class="text-light">Find me on social media</p>
+          <p class="text-light mt-2">
+            <i class="fa fa-linkedin"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-twitter"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-snapchat-ghost"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-instagram"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--<script src="~/js/site.js" asp-append-version="true"></script>-->
+  <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+  <!--<script src="https://kit.fontawesome.com/25753bb001.js" crossorigin="anonymous"></script>-->
+
+  <script type="text/javascript">
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+
+</html>

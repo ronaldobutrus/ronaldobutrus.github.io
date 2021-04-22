@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronaldo Butrus</title>
+
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
+  <style>
+    #myBtn {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Fixed/sticky position */
+      bottom: 40px;
+      /* Place the button at the bottom of the page */
+      right: 40px;
+      /* Place the button 30px from the right */
+      z-index: 99;
+      /* Make sure it does not overlap */
+      border: none;
+      /* Remove borders */
+      outline: none;
+      /* Remove outline */
+      color: white;
+      /* Text color */
+      cursor: pointer;
+      /* Add a mouse pointer on hover */
+    }
+
+    #myBtn:hover {
+      background-color: #555;
+      /* Add a dark-grey background on hover */
+    }
+  </style>
+
+</head>
+
+<body class="d-flex flex-column h-100 bg-lightgreen">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Ronaldo Butrus</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Me
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="education.html">Education</a></li>
+                      <li><a class="dropdown-item" href="softwaredevelopment.html">Software development</a></li>
+                      <li><a class="dropdown-item" href="refereeing.html">Refereeing</a></li>
+                    </ul>
+                  </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="achievements.html">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="softwaredevelopment.html">Software Dev.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workexperiences.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="refereeing.html">Refereeing</a>
+            </li>
+            <!--<li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>-->
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="flex-shrink-0">
+    <div class="container py-5">
+      ---
+layout: examples
+title: مثال الألبوم
+direction: rtl
+---
+
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">حول</h4>
+          <p class="text-muted">أضف بعض المعلومات حول الألبوم أدناه أو المؤلف أو أي سياق خلفية آخر. اجعلها بضع جمل طويلة حتى يتمكن الناس من التقاط بعض الحكايات المفيدة. ثم اربطها ببعض مواقع التواصل الاجتماعي أو معلومات الاتصال.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">اتصل</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">تابع على تويتر</a></li>
+            <li><a href="#" class="text-white">مثل في الفيسبوك</a></li>
+            <li><a href="#" class="text-white">راسلني</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>الألبوم</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="تبديل التنقل">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">مثال الألبوم</h1>
+        <p class="lead text-muted">شيء قصير وقائد حول المجموعة أدناه - محتوياتها ، ومنشئها ، وما إلى ذلك. اجعلها قصيرة ولطيفة ، ولكن ليست قصيرة جدًا حتى لا يتخطى الناس ببساطة هذه المجموعة تمامًا.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">الدعوة الرئيسية للعمل</a>
+          <a href="#" class="btn btn-secondary my-2">عمل ثانوي</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            {{< placeholder width="100%" height="225" background="#55595c" color="#eceeef" class="card-img-top" text="ظفري" >}}
+            <div class="card-body">
+              <p class="card-text">هذه بطاقة أوسع مع نص داعم أدناه كمقدمة طبيعية لمحتوى إضافي. هذا المحتوى أطول قليلاً.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">رأي</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">تعديل</button>
+                </div>
+                <small class="text-muted">9 دقائق</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">عد إلى الأعلى</a>
+    </p>
+    <p class="mb-1">مثال الألبوم هو © Bootstrap ، ولكن يرجى تنزيله وتخصيصه لنفسك!</p>
+    <p class="mb-0">جديد على Bootstrap؟ <a href="/"> تفضل بزيارة الصفحة الرئيسية </a> أو اقرأ <a href="{{< docsref "/getting-started/introduction">}} "> دليل البدء </a>.</p>
+  </div>
+</footer>
+
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-darkgreen rounded-circle fs-3">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+  </main>
+
+
+  <footer class="footer mt-auto py-3 bg-success">
+    <div class="d-flex justify-content-center">
+      <div class="container row">
+        <div class="col-10 col-lg-4">
+          <span class="text-light">&copy; Ronaldo Butrus 2021</span>
+        </div>
+        <div class="col-10 col-lg-4 mt-3 mt-lg-0">
+          <a href="/dist/index.html" class="link-light">Home - ronaldobutrus</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 1 (Colour generator)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 2 (Bingo)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 3 (Pygame install)</a><br>
+          <a href="/dist/Site1/index.html" class="link-light">Site 4 (Bingo - Qt)</a><br>
+          <a href="/dist/ElectricalListbuilder/index.html" class="link-light">Electrical Listbuilder</a>
+        </div>
+        <div class="col-10 col-lg-4 mt-3 mt-lg-0">
+          <p class="text-light">Find me on social media</p>
+          <p class="text-light mt-2">
+            <i class="fa fa-linkedin"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-twitter"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-snapchat-ghost"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus<br>
+            <i class="fa fa-instagram"></i>&nbsp;&nbsp;&nbsp;ronaldobutrus
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!--<script src="~/js/site.js" asp-append-version="true"></script>-->
+  <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+  <!--<script src="https://kit.fontawesome.com/25753bb001.js" crossorigin="anonymous"></script>-->
+
+  <script type="text/javascript">
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+
+</html>
