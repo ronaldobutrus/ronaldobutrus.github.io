@@ -98,102 +98,15 @@
 
   <main class="flex-shrink-0">
     <div class="container py-5">
-      <base href="./">
-<h1 class="pb-2"><i class="fa fa-calculator"></i> Calculator</h1>
-<hr>
-
-<div class="input-group mb-4">
-    <span class="input-group-text">Name</span>
-    <input id="inputName" type="text" class="form-control" placeholder="Your first name">
-</div>
-<div class="input-group mb-2">
-    <span class="input-group-text">Parameter 1</span>
-    <input id="inputParam1" type="text" class="form-control" placeholder="Parameter 1">
-</div>
-<div class="input-group mb-2">
-    <span class="input-group-text">Parameter 2</span>
-    <input id="inputParam2" type="text" class="form-control" placeholder="Parameter 2">
-</div>
-<div class="form-text mb-3">These must each be a number between 0 and 10, rounded to the one decimal place.</div>
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-    </symbol>
-    <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
-    </symbol>
-    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-    </symbol>
-</svg>
-
-<!--<div class="alert alert-primary d-flex align-items-center" role="alert">
-  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-  <div>
-    An example alert with an icon
-  </div>
-</div>-->
-<div id="alertSuccess" hidden>
-    <div class="alert alert-success d-flex align-items-center" role="alert">
-        <svg class="bi flex-shrink-0 me-5" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill" /></svg>
-        <div>
-            &nbsp; &nbsp;All good, have a look at your results.
-        </div>
-    </div>
-</div>
-
-<!--<div class="alert alert-warning d-flex align-items-center" role="alert">
-  <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-  <div>
-    An example warning alert with an icon
-  </div>
-</div>-->
-<div id="alertError" hidden>
-    <div class="alert alert-danger d-flex align-items-center" role="alert">
-        <svg class="bi flex-shrink-0 me-5" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill" /></svg>
-        <div class="mw-5">
-            &nbsp; &nbsp;Something went wrong. Make sure your inputs are valid and try again.
-        </div>
-    </div>
-</div>
-
-<button onclick="sendCalculationRequest()" class="btn btn-success input-group">Calculate</button>
-<div id="resultsDiv" hidden>
-    <hr>
-    <h3 id="headingText" class="mb-3">'s esults</h3>
-    <h5>Dateability <span class="badge bg-info text-light" id="res1text">0.0</span></h5>
-    <h5>Bangabiliy <span class="badge bg-info text-light" id="res2text">0.0</span></h5>
-</div>
-
-
-<script>function sendCalculationRequest() {
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://ratingservice.azurewebsites.net/api/calculate", true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        var data = JSON.stringify({
-            name: document.getElementById("inputName").value,
-            param1: parseFloat(document.getElementById("inputParam1").value),
-            param2: parseFloat(document.getElementById("inputParam2").value)
-        });
-        xhr.send(data);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var json = JSON.parse(xhr.responseText);
-                document.getElementById("headingText").innerHTML = `${document.getElementById("inputName").value}'s Results`;
-                document.getElementById("res1text").innerHTML = json.res1;
-                document.getElementById("res2text").innerHTML = json.res2;
-                document.getElementById("resultsDiv").hidden = false;
-                document.getElementById("alertSuccess").hidden = true;
-                document.getElementById("alertError").hidden = true;
-                document.getElementById("alertSuccess").hidden = false;
-            }
-            else {
-                document.getElementById("alertSuccess").hidden = true;
-                document.getElementById("alertError").hidden = true;
-                document.getElementById("alertError").hidden = false;
-            }
-        }
-    }</script>
+      <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="7; url='https://ratingservice.azurewebsites.net'" />
+  </head>
+  <body>
+    <p>If not automatically redirected, follow <a href="https://ratingservice.azurewebsites.net">this link</a>.</p>
+  </body>
+</html>
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-darkgreen rounded-circle fs-3">
       <i class="fa fa-arrow-up"></i>
